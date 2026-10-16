@@ -1,0 +1,121 @@
+.wish-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  max-width: 100%;
+  list-style: none;
+  margin: 0 -12px;
+}
+.wish {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto auto;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  min-height: 56px;
+  padding: 8px 8px 8px 12px;
+  border-radius: var(--radius);
+}
+.wish:hover {
+  background: var(--surface-hover);
+}
+.wish.off .wish-main {
+  opacity: 0.5;
+}
+.wish-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.wish-query {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  max-width: 100%;
+  min-width: 0;
+  font-size: var(--fs);
+}
+.wish-query:hover {
+  color: var(--accent-fg);
+}
+.wish-filter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.wish-filter .badge {
+  height: 16px;
+  font-size: var(--fs-2xs);
+}
+.wish-any {
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.wish-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.wish-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 34px;
+}
+.wish-stat.ok {
+  color: var(--ok);
+}
+.wish-run {
+  min-width: 64px;
+  text-align: right;
+}
+.wish-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 0;
+}
+.wish:hover .wish-actions,
+.wish-actions:focus-within {
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .wish-run {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .wish-list {
+    margin: 0 -8px;
+  }
+  .wish {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    row-gap: 6px;
+  }
+  .wish-stats {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .wish-run {
+    text-align: left;
+    min-width: 0;
+  }
+  .wish-actions {
+    opacity: 1;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+}

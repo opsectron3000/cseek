@@ -1,0 +1,18 @@
+.dialog-head-confirm {
+  justify-content: flex-start;
+  gap: 10px;
+}
+.dialog-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+.dialog-icon-danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+}

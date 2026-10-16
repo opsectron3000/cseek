@@ -1,0 +1,138 @@
+/*
+ * cseek design tokens.
+ * Flat: no borders, no shadows, no motion. Hierarchy comes from type, spacing
+ * and a few tonal steps of warm neutral. One cinnabar accent, used sparingly.
+ * Dark is the default; light follows the system or [data-theme="light"].
+ */
+:root {
+  color-scheme: dark;
+
+  --font-sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* neutrals (warm, hue ~25) */
+  --bg: #121010;
+  --bg-sunken: #0d0b0b;
+  --surface: #191615;
+  --surface-2: #1f1b1a;
+  --surface-3: #282322;
+  --surface-hover: rgb(255 236 230 / 0.04);
+  --surface-active: rgb(255 236 230 / 0.07);
+  --field: #1e1a19;
+  /* Floating surfaces, and the fills of controls placed on them. */
+  --popup: #262120;
+  --popup-field: #332d2b;
+  --popup-raised: #3b3432;
+  --border: transparent;
+  --border-strong: transparent;
+  --text: #f3eeec;
+  --text-muted: #aaa09d;
+  --text-faint: #736a67;
+
+  /* cinnabar */
+  --accent: #ec4a2f;
+  --accent-hover: #f2603f;
+  --accent-press: #d63e25;
+  --accent-soft: rgb(236 74 47 / 0.14);
+  --accent-softer: rgb(236 74 47 / 0.08);
+  --accent-fg: #f6876c; /* accent used as text on dark */
+  --accent-text: #fff8f5; /* text on an accent fill */
+
+  /* status */
+  --ok: #57c491;
+  --ok-soft: rgb(87 196 145 / 0.13);
+  --warn: #e7b450;
+  --warn-soft: rgb(231 180 80 / 0.13);
+  --danger: #f05468;
+  --danger-soft: rgb(240 84 104 / 0.13);
+  --info: #7fb2e6;
+  --info-soft: rgb(127 178 230 / 0.13);
+
+  /* shape */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  --shadow-sm: none;
+  --shadow: none;
+  --shadow-lg: none;
+  --highlight: none;
+  --focus: 0 0 0 2px rgb(236 74 47 / 0.7);
+
+  /* type scale */
+  --fs-2xs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+  --fs-2xl: 26px;
+
+  /* controls */
+  --h-xs: 24px;
+  --h-sm: 30px;
+  --h: 34px;
+  --h-lg: 42px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 0ms;
+  --t: 0ms;
+  --t-slow: 0ms;
+
+  /* layout */
+  --sidebar-w: 224px;
+  --player-h: 64px;
+  --page-pad: 28px;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #fbfaf9;
+  --bg-sunken: #f2efed;
+  --surface: #f4f1ef;
+  --surface-2: #efebe9;
+  --surface-3: #e8e3e1;
+  --surface-hover: rgb(60 30 20 / 0.04);
+  --surface-active: rgb(60 30 20 / 0.07);
+  --field: #f0ecea;
+  --popup: #ffffff;
+  --popup-field: #f1edeb;
+  --popup-raised: #e4dedb;
+  --border: transparent;
+  --border-strong: transparent;
+  --text: #1d1716;
+  --text-muted: #6e6361;
+  --text-faint: #a09592;
+
+  --accent: #dc3a1f;
+  --accent-hover: #c8331a;
+  --accent-press: #b02c15;
+  --accent-soft: rgb(220 58 31 / 0.1);
+  --accent-softer: rgb(220 58 31 / 0.06);
+  --accent-fg: #c2341b;
+  --accent-text: #ffffff;
+
+  --ok: #1f8a5b;
+  --ok-soft: rgb(31 138 91 / 0.1);
+  --warn: #a06d0c;
+  --warn-soft: rgb(190 130 20 / 0.12);
+  --danger: #cc2c43;
+  --danger-soft: rgb(204 44 67 / 0.09);
+  --info: #2c6aa8;
+  --info-soft: rgb(44 106 168 / 0.1);
+
+  --focus: 0 0 0 2px rgb(220 58 31 / 0.55);
+}
+
+/* Zero motion, everywhere: state changes are instant. */
+*,
+*::before,
+*::after {
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
