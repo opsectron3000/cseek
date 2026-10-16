@@ -1,0 +1,112 @@
+THE CSEEK "LOOK, DON'T TOUCH" LICENSE
+Version 1.0 (Extremely Final, Subject to Change Without Notice)
+
+Copyright (c) 2026 The cseek Authors. All rights reserved, plus a few more
+we just made up.
+
+0. DEFINITIONS
+
+   "Software" means this repository, its source code, documentation, design
+   language, color tokens, the specific shade of red, and any vibes emanating
+   therefrom.
+
+   "Authors" means the copyright holders of the Software, who remain
+   pseudonymous because they read the privacy section of their own code.
+
+   "You" means you. Yes, you. The one reading this instead of the code.
+
+   "Public Use" means any use of the Software that another human being,
+   animal, organization, government, AI model, or sufficiently advanced
+   houseplant could observe, access, benefit from, or become aware of.
+   This includes, without limitation: hosting, deploying, serving,
+   demonstrating, streaming, screenshotting, tweeting, posting, presenting at
+   a meetup, mentioning at a party, or vaguely gesturing toward.
+
+   "Private Use" means use of the Software solely by You, on hardware You
+   control, in a manner no other party can perceive, in the privacy of Your
+   own home, with the blinds closed.
+
+1. NO PUBLIC USE
+
+   Public Use of the Software is prohibited. Entirely. In all forms. In all
+   jurisdictions. On this planet and any other. Forks intended for Public
+   Use are Public Use. Hosting it "just for a few friends" is Public Use.
+   Your friends are the public.
+
+2. PRIVATE USE, WITH ATTRIBUTION
+
+   Subject to Your continuous compliance with this License and the continued
+   good mood of the Authors, You are granted a personal, non-exclusive,
+   non-transferable, non-sublicensable, revocable, royalty-free license to
+   use and modify the Software for Private Use only, provided that:
+
+   a. You keep this LICENSE file and all copyright notices intact in every
+      copy, in full, unmodified, including this sentence.
+
+   b. Any running instance displays, somewhere visible to You, the text
+      "Powered by cseek, by The cseek Authors." You must look at it at least
+      once.
+
+   c. If anyone asks what software You are using, You say "cseek, by The
+      cseek Authors" and not "oh, just some Soulseek thing."
+
+3. NO REDISTRIBUTION
+
+   You may not copy, publish, distribute, sublicense, sell, rent, lease,
+   lend, gift, re-gift, bundle, mirror, or otherwise make the Software
+   available to anyone else, whether modified or not, whether for money or
+   for clout.
+
+4. NO TRAINING, NO SCRAPING
+
+   You may not use the Software, in whole or in part, to train, fine-tune,
+   evaluate, or otherwise feed any machine learning model, dataset, or
+   suspiciously large spreadsheet.
+
+5. REVOCATION
+
+   This License may be revoked by the Authors at any time, for any reason
+   or no reason, including but not limited to: You, Your commit messages,
+   Your choice of tabs or spaces, Mercury being in retrograde, or the
+   Authors simply waking up and choosing violence.
+
+   Revocation takes effect immediately upon notice, which may be given by
+   any means, including a commit to this repository changing the word
+   "revocable" to "revoked." Upon revocation You must stop all use, delete
+   all copies, and think about what You've done.
+
+6. TERMINATION
+
+   Any breach of this License terminates it automatically, without notice,
+   retroactively to the moment You first thought about breaching it.
+
+7. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS,
+   IMPLIED, OR WHISPERED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR
+   THE SOFTWARE ACTUALLY FINDING THAT ONE B-SIDE YOU'VE BEEN LOOKING FOR
+   SINCE 2009.
+
+8. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE, INCLUDING BUT NOT LIMITED TO YOUR LEECHER
+   RATIO, YOUR BAN FROM A CHAT ROOM, OR YOUR DISK FILLING UP WITH FLAC.
+
+9. THIRD-PARTY COMPONENTS
+
+   Third-party dependencies are governed by their own licenses. This License
+   is mean, not illegal.
+
+10. MISCELLANEOUS
+
+   If any provision of this License is found unenforceable, the remaining
+   provisions stay in effect and become slightly more smug about it. The
+   Authors' failure to enforce any provision is not a waiver; they were
+   just busy. Headings are for vibes only.
+
+By viewing, cloning, or using the Software, You acknowledge that You have
+read this License, or at least scrolled past it, which counts.
