@@ -1,0 +1,108 @@
+# cseek configuration. Every key is optional; omitted keys use the defaults shown.
+# Relative paths resolve against the directory containing this file.
+# Everything here can also be edited in the web UI (System → Options).
+
+blacklist = []          # usernames that are refused everything; existing transfers are cancelled
+
+[soulseek]
+username = ""           # logging in with a new name registers it on the server
+password = ""
+serverHost = "server.slsknet.org"
+serverPort = 2242
+listenPort = 50300      # forward this TCP port for best connectivity
+description = ""
+# picture = "avatar.png"
+autoConnect = true
+
+[directories]
+# The storage folder: every path below and every shared folder lives inside
+# it and cannot point outside. Relative to the data dir unless absolute.
+# Only settable here, never through the API.
+root = "files"
+downloads = "downloads"
+incomplete = "incomplete"
+# Extra named destinations a download can be sent to (inside storage):
+# destinations = [{ name = "Audiobooks", path = "audiobooks" }]
+destinations = []
+
+[shares]
+directories = []        # inside storage, e.g. ["music", "[Rare]rips/2024"]  ([alias] prefix optional)
+excludeFilters = [".DS_Store", "Thumbs.db"]
+rescanIntervalMinutes = 720
+
+[transfers]
+uploadSlots = 4
+uploadSpeedLimitKbps = 0          # 0 = unlimited
+downloadSpeedLimitKbps = 0
+maxQueuedFilesPerUser = 500
+maxQueuedBytesPerUser = 10737418240
+multiSource = true                # fetch chunks of one file from several users at once
+multiSourceChunkMb = 8
+stalledTimeoutSeconds = 90
+autoReplaceStalled = true         # search for alternate sources when a download stalls
+
+# User groups with their own upload rules.
+# [[groups]]
+# name = "friends"
+# members = ["someone"]
+# uploadSlots = 2
+# speedLimitKbps = 0
+# priority = 10
+# allowedExtensions = []          # empty = everything; e.g. ["flac", "mp3"]
+# queueLimitFiles = 0
+
+[leechers]                        # users sharing fewer than minFiles/minDirectories
+enabled = false
+minFiles = 1
+minDirectories = 1
+speedLimitKbps = 50
+allowedExtensions = []
+
+[search]
+responseLimit = 500
+fileLimit = 20000
+timeoutSeconds = 15
+maxResultsPerResponse = 500       # cap on results we send to others
+excludedPhrases = []
+
+[rooms]
+autoJoin = []
+
+[wishlist]
+enabled = true
+intervalMinutes = 60
+maxAutoDownloadsPerRun = 3
+
+[guard]                           # rate-limits abusive peers and bans repeat offenders
+enabled = true
+maxQueueRequestsPerMinute = 300
+maxSearchResponsesPerMinute = 60
+banThreshold = 5
+banMinutes = 60
+
+[nowPlaying]
+enabled = true
+descriptionTemplate = """
+{description}
+
+Now playing: {artist} – {title}"""
+
+[integrations.lidarr]
+enabled = false
+url = "http://localhost:8686"
+apiKey = ""
+syncIntervalMinutes = 360         # wanted/missing albums become wishlist items
+importOnComplete = true           # trigger DownloadedAlbumsScan after downloads finish
+
+[geoip]                           # country flags: GeoIP lookup of peer IPs (server-provided countries work regardless)
+enabled = true                    # keeps DB-IP Country Lite in <data>/geoip, refreshed monthly
+
+[web]
+port = 5030
+host = "0.0.0.0"
+
+[web.auth]
+disabled = false
+username = "cseek"
+password = ""                     # generated and logged on first run
+apiKeys = []                      # send as X-API-Key

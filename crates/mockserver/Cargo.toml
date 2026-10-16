@@ -1,0 +1,11 @@
+[package]
+name = "cseek-mockserver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Minimal local Soulseek server for testing (login, peer relay, search fan-out, messages, rooms, interests)"
+
+[dependencies]
+slsk-proto.workspace = true
+tokio.workspace = true
+anyhow.workspace = true

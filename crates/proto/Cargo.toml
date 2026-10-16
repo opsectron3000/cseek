@@ -1,0 +1,10 @@
+[package]
+name = "slsk-proto"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Soulseek wire protocol: framing, server, peer, distributed and init messages"
+
+[dependencies]
+thiserror.workspace = true
+flate2.workspace = true
